@@ -747,32 +747,37 @@ html {
 
 
 
-/* ==== KONTEN DI TENGAH PAS TANPA SCROLL BAR CEUNAH ==== */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+@media (max-width: 1024px){
+  html, body{
+    height: auto !important;
+    overflow: auto !important;
+  }
+
+  .page-full-wrap{
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    max-width: 680px;
+    width: 92%;
+    margin: 0 auto !important;
+    padding-top: 12px;
+    padding-bottom: 90px;
+    z-index: 1;
+  }
+
+  .background-overlay{
+    position: absolute;
+    inset: 0;
+    z-index: 0 !important;
+    pointer-events: none;
+  }
 }
 
-.page-full-wrap{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 680px;
-  width: 92%;
-  margin: 0 !important;
-  padding-top: calc(env(safe-area-inset-top, 0px) + 8px);
-  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 8px);
-
-  display: block;
-}
-
-@media (max-height: 620px){
-  .page-title{ margin-top: 8px; margin-bottom: 6px; }
-  .page-full-wrap > .flex-both-center.flex-wrap{ margin-top: 8px; margin-bottom: 12px; }
-  .page-item-wrap{ margin: 12px 0; }
+@media (max-width: 480px){
+  .page-title{ margin:12px auto 6px; }
+  .page-bio{ padding:0 .75rem; }
+  .page-item-wrap + .page-item-wrap{ margin-top:12px; }
 }
 
 
