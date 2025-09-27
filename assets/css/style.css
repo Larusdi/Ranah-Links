@@ -746,45 +746,6 @@ html {
 
 
 
-
-@media (max-width: 1024px){
-  html, body{
-    height: auto !important;
-    overflow: auto !important;
-  }
-
-  .page-full-wrap{
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    transform: none !important;
-    max-width: 680px;
-    width: 92%;
-    margin: 0 auto !important;
-    padding-top: 12px;
-    padding-bottom: 90px;
-    z-index: 1;
-  }
-
-  .background-overlay{
-    position: absolute;
-    inset: 0;
-    z-index: 0 !important;
-    pointer-events: none;
-  }
-}
-
-@media (max-width: 480px){
-  .page-title{ margin:12px auto 6px; }
-  .page-bio{ padding:0 .75rem; }
-  .page-item-wrap + .page-item-wrap{ margin-top:12px; }
-}
-
-
-
-
-
-
 /* === Snake ring === */
 :root{
   --avatar-size: 96px;
