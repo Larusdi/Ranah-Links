@@ -119,7 +119,7 @@ img, svg, video, canvas { display:block; max-width:100%; height:auto; }
 .display-image.snake-spin{ animation: ring-spin 5s linear infinite, tiktok-pulse 2.2s ease-in-out infinite; }
 
 /* =============================================================================
- * Brand ribbon (Ranah Link)
+ * Ranah Link
  * ========================================================================== */
 .brand-ribbon{ display:none; }
 .brand-text{
@@ -175,7 +175,7 @@ img, svg, video, canvas { display:block; max-width:100%; height:auto; }
 body.modal-open{ overflow:hidden; }
 
 /* =============================================================================
- * Modal Profile & Verified Badge modal
+ * Modal Profile & Verified
  * ========================================================================== */
 .verified-badge.wiggle img{ animation: vb-wiggle .6s ease; }
 @keyframes vb-wiggle{
@@ -232,9 +232,6 @@ body.modal-open{ overflow:hidden; }
 }
 .vb-close:hover{ transform: rotate(90deg) scale(1.05); box-shadow: 0 6px 16px rgba(0,0,0,.18); }
 
-/* =============================================================================
- * Brief pop (lt-pop)
- * ========================================================================== */
 .lt-pop {
   position: fixed;
   left: 50%;
@@ -258,7 +255,7 @@ body.modal-open{ overflow:hidden; }
   background:#fff; box-shadow: 2px 2px 12px rgba(0,0,0,.10);
   border-left:1px solid rgba(0,0,0,.06); border-bottom:1px solid rgba(0,0,0,.06);
   transform-origin:center;
-  transform: translateX(-50%) rotate(45deg); /* gabungan, ganti rotate: */
+  transform: translateX(-50%) rotate(45deg);
 }
 .lt-pop[data-open="true"]{
   opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0);
@@ -266,9 +263,6 @@ body.modal-open{ overflow:hidden; }
 .lt-chip__brand{ position:relative; }
 .lt-chip__brand:active{ transform: scale(.98); }
 
-/* =============================================================================
- * Tap-highlight reset & button/link plain style (digabung)
- * ========================================================================== */
 .lt-modal__close,
 .brand-ribbon,
 .lt-footer .mf-row a,
@@ -282,27 +276,4 @@ a, button, .page-item-each, .page-social {
   border: none !important;
   box-shadow: none !important;
   cursor: pointer;
-}
-
-/* =============================================================================
- * Media Queries (digabung untuk hemat)
- * ========================================================================== */
-@media (max-width:480px){
-  .page-title{ gap:.5rem; margin:12px auto 6px; }
-  .verified-badge img{ width:22px; height:22px; }
-  .page-bio{ padding:0 .75rem; margin:6px auto 12px; }
-  .page-full-wrap > .flex-both-center.flex-wrap{ margin-top:8px; margin-bottom:16px; }
-
-  .brand-ribbon{
-    position:absolute; top:12px; left:10px; z-index:15;
-    display:block; padding:0; background:none; border:none; box-shadow:none; backdrop-filter:none;
-  }
-
-  .lt-pop{ bottom: calc(env(safe-area-inset-bottom, 0px) + 66px); }
-}
-
-@media (max-width:380px){
-  .bl-dialog{ width:min(94vw, 380px); padding:18px 16px 16px; }
-  .bl-title{ font-size:18px; }
-  .bl-copy, .bl-note{ font-size:14px; }
 }
