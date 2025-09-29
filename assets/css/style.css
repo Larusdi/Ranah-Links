@@ -131,6 +131,28 @@ img, svg, video, canvas { display:block; max-width:100%; height:auto; }
 }
 .brand-text em{ font-style:normal; text-shadow: 0 1px 0 rgba(255,255,255,.75), 0 0 2px rgba(255,255,255,.55); }
 
+:root{
+  --gold-1: #f2c94c;
+  --gold-2: #f1b60a;
+}
+
+.brand-ribbon .brand-text{
+  font-weight: 800;
+  letter-spacing: .3px;
+  background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.18));
+}
+
+.brand-ribbon .brand-text em{
+  font-style: normal;
+  -webkit-text-fill-color: transparent;
+}
+
 /* =============================================================================
  * Modal Store
  * ========================================================================== */
