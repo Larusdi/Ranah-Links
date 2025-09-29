@@ -1,1 +1,76 @@
+/* =============================================================================
+ * Responsive: tablet & down
+ * ========================================================================== */
+@media (max-width:768px) {
+  .page-full-wrap { width: 90%; }
 
+  .embed-wrap-inside iframe {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .page-overlay-title { font-size: 24px; margin: 16px 0; }
+
+  .embed-wrap-inside:after { width: 93%; }
+}
+
+/* =============================================================================
+ * Responsive: phones
+ * ========================================================================== */
+@media (max-width:480px) {
+  .campaign-main-wrap { width: 100%; padding: 0 24px; }
+
+  .xs-hidden { display: none; }
+  .xs-w-100 { width: 100%; }
+  .xs-w-150 { width: 150px; }
+
+  .featured-subscribers {
+    height: 150px;
+    padding: 24px 16px 32px;
+  }
+
+  .h-165 { height: 165px; }
+
+  .xs-mt-6  { margin-top: 6px; }
+  .xs-mt-8  { margin-top: 8px; }
+  .xs-mt-16 { margin-top: 16px; }
+  .xs-mt-32 { margin-top: 32px; }
+
+  .xs-mx-24 { margin: auto 24px; }
+
+  .xs-block { display: block; }
+
+  .subsc-button {
+    font-weight: 400;
+    padding: 0 16px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .thank-you-btn { border-radius: 4px; }
+
+  .subsc-email {
+    width: calc(100% - 65px);
+    border: 1.5px solid #fff;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .dark-input { border: 1.5px solid #222; }
+
+  .subsc-title { font-size: 16px; }
+
+  .featured-subscribers .subsc-title {
+    margin-top: 38px;
+    width: calc(100% - 20px);
+  }
+
+  /* Footer tiny text on phones */
+  .lt-chip__text, .lt-chip__brand{ font-size: 13px; }
+  .lt-chip__logo{ width: 16px; height: 16px; }
+}
+
+/* =============================================================================
+ * Responsive: very small phones
+ * ========================================================================== */
+@media (max-width:400px) {
+  .embed-wrap-inside:after { width: 90%; }
+}
