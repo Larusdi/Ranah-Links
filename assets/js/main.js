@@ -1082,7 +1082,12 @@ document.addEventListener('DOMContentLoaded', () => {
     wrap.innerHTML = `
       <div class="modal-backdrop"></div>
       <div class="modal-card">
-        <button class="modal-close" aria-label="Tutup">×</button>
+        <button class="modal-close" aria-label="Tutup">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
         <h3 id="ttl-${key}" style="margin:0 32px 10px 0;font:700 18px/1.2 Inter,system-ui">${data.title}</h3>
         ${data.html}
       </div>`;
